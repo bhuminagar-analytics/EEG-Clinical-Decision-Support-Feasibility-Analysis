@@ -26,11 +26,11 @@
 
 ## 📊 Model Performance Preview
 
-![ROC Curve](visuals/roc_curve.png)
+![ROC Curve](Visuals/roc_curve.png)
 
 > ROC curve comparison across all four evaluated models. SVM achieved the best performance with AUC 0.896 on the held-out test set, exceeding the predefined clinical feasibility threshold of AUC ≥ 0.80.
 
-![Confusion Matrix](visuals/confusion_matrix.png)
+![Confusion Matrix](Visuals/confusion_matrix.png)
 
 > Confusion matrix for the best-performing SVM model. Out of 26 test samples, the model correctly classified the majority of both schizophrenia and control cases, with a small number of false positives and false negatives documented and analyzed in the feasibility assessment.
 
