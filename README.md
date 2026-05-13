@@ -281,4 +281,4 @@ EEG-Clinical-Decision-Support-Feasibility-Analysis/
 
 ---
 
-*Prepared by Bhumi Nagar · Business Analyst · MBA, Business Analytics (STEM) · Saint Peter's University · May 2026*
+*Prepared by Bhumi Nagar · Business Analyst · MBA, Business Analytics (STEM) · Saint Peter's University · January 2026*
