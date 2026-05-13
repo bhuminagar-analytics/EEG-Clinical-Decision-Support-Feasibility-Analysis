@@ -1,0 +1,73 @@
+DATA DESCRIPTION
+
+It contains anonymized individual-level data for the derived high-density EEG metrics (NREM2 sleep stage) and wake auditory ERP.  These data were used in the manuscript:
+Non-rapid eye movement sleep and wake neurophysiology in schizophrenia (https://doi.org/10.1101/2021.12.13.472475) and below we reference figures from this manuscript.
+
+Note: missing values correspond to participants which failed to pass the QC. For more information, see Methods. 
+
+
+DIS - diagnostic status (TRUE - SCZ, FALSE - CTR)
+
+AGE - age in 5-year bins (e.g age 20 was assigned to individuals with actual age between 18.5 and 22.5 years)
+
+SEX - sex (M-male, F-female)
+
+
+The rest of the variables provided below are high-density EEG summaries. It means that each metric (DENS, AMP, etc) is additionally stratified by channels [CH] (57 different channels e.g. AFZ, FP1, C3, O2, etc) and/or frequency/band [F/BAND]. Please see a detailed description of each metric below.
+
+Spindle parameters (METRIC_F_CH – frequency x channels) - Figure 2
+	F: 11 - slow spindles, 15 - fast spindles
+
+DENS – spindle density (n/min)
+AMP – spindle amplitude (uV)
+ISA_S – integrated spindle activity (a.u.)
+DUR – spindle duration (s)
+FFT – spindle mean frequency (Hz)
+CHIRPF– spindle chirp (intra-spindle frequency deceleration) (Hz)
+
+
+
+Slow oscillation (SO) parameters  (METRIC_CH by channels) - Figure 3
+
+SO_RATE – SO density (n/min)
+SO_DUR – SO duration (s)
+SO_AMP – SO negative peak amplitude (uV)
+SO_P2P – SO peak-to-peak amplitude (uV)
+SO_SLOPE_NEG2 – SO slope from negative peak to positive zero crossing (a.u.)
+
+
+
+Coupling between spindle and SO parameters (METRIC_F_CH – frequency x channels) - Figure 3
+	F: 11 - slow spindles, 15 - fast spindles
+
+COUPL_MAG_Z – magnitude of coupling normalized by surrogate time series (z-score)
+COUPL_OVERLAP_Z – number of spindles overlapping a detected SO normalized by surrogate time series (z-score)
+COUPL_ANGLE – circular mean of SO phase at spindle Peak (º)
+
+
+
+Spectral power (PSD_BAND_CH – bands x channels) - Sup Figure 1
+
+SLOW (0.3-1 Hz)
+DELTA (1-4 Hz)
+THETA (4-8 Hz)
+ALPHA (8-12 Hz)
+SIGMA (13-15 Hz)
+BETA (15-30 Hz)
+
+
+
+Phase-slope index (PSI_F_CH – frequency x channels) - Figure 5
+
+F: 3 - 20 Hz
+
+
+
+Wake ERP (METRIC_CH by channels) - Figure 8
+
+P50_RATIO - sensory gating ratio (P50 amplitude of stimulus 2 / P50 amplitude of stimulus 1)
+MMN_AMP - amplitude of MMN component (uV)
+PWE – spectral power of 40 Hz ASSR response 
+PLF – phase synchrony of 40 Hz ASSR response
+
+
